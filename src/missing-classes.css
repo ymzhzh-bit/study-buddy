@@ -16,7 +16,20 @@
   flex-direction: column;
 }
 
-/* Sidebar */
+/* Sidebar — ensure footer stays anchored at the bottom */
+.sidebar {
+  overflow: hidden;
+}
+.sidebar__brand {
+  flex-shrink: 0;
+}
+.sidebar__nav {
+  min-height: 0;
+}
+.sidebar__footer {
+  flex-shrink: 0;
+  margin-top: auto;
+}
 .sidebar__brand-text {
   display: flex;
   flex-direction: column;
